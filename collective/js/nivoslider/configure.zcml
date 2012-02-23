@@ -1,0 +1,28 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    xmlns:cmf="http://namespaces.zope.org/cmf"
+    xmlns:five="http://namespaces.zope.org/five"
+    xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+    xmlns:i18n="http://namespaces.zope.org/i18n"
+    i18n_domain="collective.js.nivoslider">
+
+  <browser:resource
+    name="jquery.jquery.nivo.slider.pack.js"
+    file="resources/js/jquery.nivo.slider.pack.js"
+    />
+ 
+  <browser:resourceDirectory
+    name="jquery.nivoslider"
+    directory="resources"
+    />
+
+  <genericsetup:registerProfile
+      name="default"
+      title="collective.js.nivoslider default"
+      directory="profiles/default"
+      description='Install collective.js.nivoslider in Plone'
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+  />
+
+</configure>
