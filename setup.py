@@ -6,7 +6,7 @@ version = '0.1dev'
 setup(name='collective.js.nivoslider',
       version=version,
       description="JQuery Nivogallery plugin as browser resource",
-      long_description=open("README.txt").read() + "\n" +
+      long_description=open("README.rst").read() + "\n" +
                        open(os.path.join("docs", "HISTORY.txt")).read(),
       # Get more strings from
       # http://pypi.python.org/pypi?%3Aaction=list_classifiers
