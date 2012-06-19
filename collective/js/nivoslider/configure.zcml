@@ -8,10 +8,10 @@
     i18n_domain="collective.js.nivoslider">
 
   <browser:resource
-    name="jquery.jquery.nivo.slider.pack.js"
-    file="resources/js/jquery.nivo.slider.pack.js"
+    name="jquery.nivo.slider.pack.js"
+    file="resources/jquery.nivo.slider.pack.js"
     />
- 
+
   <browser:resourceDirectory
     name="jquery.nivoslider"
     directory="resources"

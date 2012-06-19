@@ -1,0 +1,52 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      lang="en"
+      metal:use-macro="here/main_template/macros/master"
+      i18n:domain="collective.googledocsviewer">
+<body>
+<div metal:fill-slot="content-core">
+
+<div class="slider-wrapper theme-default">
+    <div id="slider" class="nivoSlider">
+        <img src="++resource++jquery.nivoslider/demo/toystory.jpg"
+             data-thumb="++resource++jquery.nivoslider/demo/toystory.jpg"
+             alt=""/>
+        <a href="http://dev7studios.com"><img src="++resource++jquery.nivoslider/demo/up.jpg"
+           data-thumb="++resource++jquery.nivoslider/demo/up.jpg"
+           alt="" title="This is an example of a caption"/></a>
+        <img src="++resource++jquery.nivoslider/demo/walle.jpg"
+           data-thumb="++resource++jquery.nivoslider/demo/walle.jpg" alt=""/>
+        <img src="++resource++jquery.nivoslider/demo/nemo.jpg"
+           data-thumb="++resource++jquery.nivoslider/demo/nemo.jpg" alt=""/>
+      <div id="htmlcaption" class="nivo-html-caption">
+        <strong>This</strong> is an example of a <em>HTML</em> caption with <a href="#">a link</a>. 
+      </div>
+   </div>
+</div>
+
+<script type="text/javascript">
+$(window).load(function() {
+    $('#slider').nivoSlider();
+});
+</script>
+<style>
+.slider-wrapper { 
+    width: 80%; 
+    margin: 20px auto;
+}
+
+.theme-default #slider {
+    margin:100px auto 0 auto;
+}
+.theme-pascal.slider-wrapper,
+.theme-orman.slider-wrapper {
+    margin-top:150px;
+}
+
+
+</style>
+</div>
+</body>
+</html>
