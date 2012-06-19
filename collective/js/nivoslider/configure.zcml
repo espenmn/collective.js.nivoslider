@@ -24,5 +24,13 @@
       description='Install collective.js.nivoslider in Plone'
       provides="Products.GenericSetup.interfaces.EXTENSION"
   />
+  <genericsetup:upgradeStep
+      source="*"
+      destination="2"
+      title="Common Upgrade"
+      description="Apply the profile"
+      profile="collective.js.nivoslider:default"
+      handler=".upgrades.common"
+      />
 
 </configure>
