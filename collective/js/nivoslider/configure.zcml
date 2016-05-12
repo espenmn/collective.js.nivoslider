@@ -8,10 +8,10 @@
     i18n_domain="collective.js.nivoslider">
 
   <browser:resource
-    name="jquery.jquery.nivo.slider.pack.js"
-    file="resources/js/jquery.nivo.slider.pack.js"
+    name="jquery.nivo.slider.pack.js"
+    file="resources/jquery.nivo.slider.pack.js"
     />
- 
+
   <browser:resourceDirectory
     name="jquery.nivoslider"
     directory="resources"
@@ -24,5 +24,13 @@
       description='Install collective.js.nivoslider in Plone'
       provides="Products.GenericSetup.interfaces.EXTENSION"
   />
+  <genericsetup:upgradeStep
+      source="*"
+      destination="2"
+      title="Common Upgrade"
+      description="Apply the profile"
+      profile="collective.js.nivoslider:default"
+      handler=".upgrades.common"
+      />
 
 </configure>

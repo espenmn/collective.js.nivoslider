@@ -1,0 +1,13 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    i18n_domain="collective.js.nivoslider">
+
+  <browser:page
+    name="example.nivoslider"
+    for="*"
+    template="demo.pt"
+    permission="zope2.View"
+    />
+
+</configure>
